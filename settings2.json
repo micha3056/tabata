@@ -1,5 +1,17 @@
 [
-    "Lorem ipsum dolor sit amet",
-    "consectetur adipiscing elit",
-    "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+  {
+    "name": "Object 1",
+    "location": "Location 1"
+  },
+  {
+    "name": "Object 2",
+    "location": "Location 2"
+  },
+  {
+    "name": "Object 3",
+    "location": "Location 3"
+  }
 ]
+
+
+
