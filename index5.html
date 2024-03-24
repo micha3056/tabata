@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workout Timer</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100">
+  <div class="container mx-auto py-8 px-4">
+    <h1 class="text-3xl font-bold mb-4">Workout Timer</h1>
+      <div id="buttons" class="mb-4"></div>
+    <div id="exerciseName" class="mb-2"></div>
+    <div class="flex">
+      
+      <div class="w-1/2 mr-4">
+        
+        <img id="exerciseImage" src="" alt="" class="mb-2 w-full rounded">
+        <div id="timer" class="mb-2"></div>
+        <div class="flex space-x-2">
+          <button id="pauseBtn" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Pause</button>
+          <button id="continueBtn" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">Continue</button>
+          <button id="skipBtn" class="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded">Skip to Next Exercise</button>
+        </div>
+      </div>
+      <div class="w-1/2">
+        <div id="exerciseList" class="border p-4 rounded"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script5.js"></script>
+</body>
+</html>

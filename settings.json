@@ -1,17 +1,64 @@
-[
-  {
-    "name": "30 sec",
-    "totalTime": 30
-  },
-  {
-    "name": "20 sec",
-    "totalTime": 20
-  },
-  {
-    "name": "10 sec",
-    "totalTime": 10
-  }
-]
-
-
-
+{
+  "workouts": [
+    {
+      "name": "Workout 1",
+      "exercises": [
+        {
+          "name": "Exercise 1",
+          "time": "3 seconds",
+          "image_url": "image.png"
+        },
+        {
+          "name": "Exercise 2",
+          "time": "4 seconds",
+          "image_url": "image0.png"
+        },
+        {
+          "name": "Exercise 3",
+          "time": "6 seconds",
+          "image_url": "image1.png"
+        }
+      ]
+    },
+    {
+      "name": "Workout 2",
+      "exercises": [
+        {
+          "name": "Exercise 1",
+          "time": "3 seconds",
+          "image_url": "https://example.com/exercise1.jpg"
+        },
+        {
+          "name": "Exercise 2",
+          "time": "4 seconds",
+          "image_url": "https://example.com/exercise2.jpg"
+        },
+        {
+          "name": "Exercise 3",
+          "time": "6 seconds",
+          "image_url": "https://example.com/exercise3.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Workout 3",
+      "exercises": [
+        {
+          "name": "Exercise 1",
+          "time": "3 seconds",
+          "image_url": "https://example.com/exercise1.jpg"
+        },
+        {
+          "name": "Exercise 2",
+          "time": "4 seconds",
+          "image_url": "https://example.com/exercise2.jpg"
+        },
+        {
+          "name": "Exercise 3",
+          "time": "6 seconds",
+          "image_url": "https://example.com/exercise3.jpg"
+        }
+      ]
+    }
+  ]
+}

@@ -8,25 +8,25 @@ document.addEventListener('DOMContentLoaded', function() {
   // fetch('https://raw.githubusercontent.com/micha3056/tabata/main/settings3.json')
   fetch('http://127.0.0.1:5500/settings.json')
     .then(response => response.json())
-    .then(data => {
-      data.workouts.forEach(workout => {
+    .then(settings => {
+      settings.forEach(setting => {
         const button = document.createElement('button');
-        button.textContent = workout.name;
+        button.textContent = setting.name;
         buttonsContainer.appendChild(button);
 
         button.addEventListener('click', function() {
-          startWorkoutTimer(workout);
+          startCountdown(setting.totalTime);
         });
       });
     })
-    .catch(error => console.error('Error loading workouts:', error));
+    .catch(error => console.error('Error loading settings:', error));
 
-    function startWorkoutTimer(workout) {
+    function startCountdown(totalTime) {
       if (countdownInterval) { // Check if timer is already running
         clearInterval(countdownInterval); // Clear the previous timer
       }
   
-      let timeLeft = parseInt(workout.exercises[0].time); // Get time from the first exercise
+      let timeLeft = totalTime;
       timerDisplay.textContent = timeLeft;
   
       countdownInterval = setInterval(function() {
