@@ -6,6 +6,8 @@ todo:
     pause
     exercise
 
+- you need to run live server! vscode extension
+
 
 samples:
 - https://exercisetimer.net/createworkout#

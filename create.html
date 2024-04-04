@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JSON Editor</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="mt-5">JSON Editor</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="mb-3">
+          <button class="btn btn-primary mr-2" onclick="toggleAddExercise()">Add Exercise</button>
+          <input type="file" id="fileInput" accept=".json" onchange="importJson()" style="display: none;">
+          <label for="fileInput" class="btn btn-info mr-2">Import JSON</label>
+          <button class="btn btn-success mr-2" onclick="exportJson()">Export JSON</button>
+          <button class="btn btn-danger" onclick="clearExercises()">Clear Exercises</button>
+        </div>
+        <div id="exercisesList"></div>
+      </div>
+      <div class="col-md-6">
+        <div class="mb-3" id="exerciseDetails" style="display: none;">
+          <h2>Exercise Details</h2>
+          <label for="exerciseTitle">Title:</label>
+          <input type="text" id="exerciseTitle" class="form-control mb-2">
+          <label for="exerciseTime">Time:</label>
+          <input type="text" id="exerciseTime" class="form-control mb-2">
+          <label for="exerciseImageUrl">Image URL:</label>
+          <input type="text" id="exerciseImageUrl" class="form-control mb-2">
+          <button class="btn btn-primary mr-2" onclick="addOrUpdateExercise()">Add/Update Exercise</button>
+          <button class="btn btn-secondary" onclick="cancelEdit()">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="create.js"></script>
+</body>
+</html>
